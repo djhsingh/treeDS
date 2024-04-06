@@ -9,13 +9,11 @@ public class Main {
        tree.insert(2);
        tree.insert(34);
        tree.insert(1);
-        System.out.println(tree);
+      /*  tree.traverseInOrder();
+       tree.delete(2);
         tree.traverseInOrder();
-        System.out.println(tree.get(2));
-        System.out.println(tree.get(34));
-        System.out.println(tree.get(21));
-        System.out.println(tree.min());
-        System.out.println(tree.max());
-
+        tree.delete(1);
+        tree.traverseInOrder();*/
+        tree.traversePreOrder();
     }
 }

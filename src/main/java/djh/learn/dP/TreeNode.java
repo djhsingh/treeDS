@@ -64,6 +64,17 @@ public class TreeNode {
         }
     }
 
+    public void preOrderTraversal(){
+
+        System.out.print(data+" , ");
+        if(leftNode!= null){
+            leftNode.preOrderTraversal();
+        }
+        if(rightNode!= null){
+            rightNode.preOrderTraversal();
+        }
+    }
+
     public TreeNode get(int value){
         if(value == data){
             return this;
@@ -103,4 +114,8 @@ public class TreeNode {
                 ", rightNode=" + rightNode +
                 '}';
     }
+
+
+
+
 }
